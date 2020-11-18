@@ -1,7 +1,8 @@
 import React from "react";
 import TodoItem from "./TodoItem";
+import propTypes from 'prop-types';
 
-export default function TodoList(props, index) {
+function TodoList(props) {
   return (
     <ul className="ul-item">
       {props.todos.map((todo, index) => {
@@ -10,3 +11,8 @@ export default function TodoList(props, index) {
     </ul>
   );
 }
+
+TodoList.propTypes ={
+  todos: propTypes.arrayOf(propTypes.object).isRequired
+}
+export default TodoList
