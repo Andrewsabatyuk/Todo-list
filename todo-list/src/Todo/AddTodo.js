@@ -20,7 +20,7 @@ function AddTodo({ onCreate }) {
   function submitHandler(event) {
     event.preventDefault();
 
-    if (input.value.trim()) {
+    if (input.value().trim()) {
       onCreate(input.value());
       input.clear();
       //    setValue('')
