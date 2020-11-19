@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #778b83;
 }
 
 code {
@@ -48,4 +49,8 @@ input{
   border-radius: 50%;
   color: white;
   border: none;
+}
+
+.done{
+  text-decoration: line-through;
 }
