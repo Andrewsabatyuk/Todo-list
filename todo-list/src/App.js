@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Todolist from "./Todo/Todolist";
 import Context from "./context";
 import AddTodo from "./Todo/AddTodo";
@@ -11,6 +11,15 @@ function App() {
     { id: 4, completed: false, title: "Вивчити React" },
     { id: 5, completed: false, title: "get out of this" },
   ]);
+
+
+  useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
+  .then(response => response.json())
+  .then(todos => {
+    setTodos(todos)
+  })
+  }, [])
 
   function toggleTodo(id) {
     setTodos(
@@ -39,7 +48,7 @@ function App() {
         {todos.length ? (
           <Todolist todos={todos} onToggle={toggleTodo} />
         ) : (
-          <p>No todos!</p>
+          <p className='no-todos'>No todos!</p>
         )}
       </div>
     </Context.Provider>

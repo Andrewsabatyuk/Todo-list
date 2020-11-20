@@ -54,3 +54,20 @@ input{
 .done{
   text-decoration: line-through;
 }
+.in-style {
+  width: 400px;
+  height: 32px;
+  border: none;
+  border-radius: 10px;
+}
+.btn {
+  height: 34px;
+  width: 179px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+}
+.no-todos{
+  font-size: 20px;
+  font-weight: bolder;
+}

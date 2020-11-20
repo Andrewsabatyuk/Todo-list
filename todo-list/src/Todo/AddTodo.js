@@ -29,8 +29,8 @@ function AddTodo({ onCreate }) {
 
   return (
     <form style={{ marginBottom: "1rem" }} onSubmit={submitHandler}>
-      <input {...input.bind} />
-      <button type="submit">Add todo</button>
+      <input className='in-style' {...input.bind} />
+      <button type="submit" className='btn'>Add todo</button>
     </form>
   );
 }
