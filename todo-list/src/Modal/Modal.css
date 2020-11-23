@@ -1,0 +1,28 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:  0;
+    bottom: 0;
+    background: rgba(0, 0, 0, alpha);
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.modal-body {
+    padding: 1rem;
+    width: 400px;
+    border-radius: 5px;
+    background: #fff;
+    height: 160px;
+}
+.open-btn, .close-btn {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 37px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
